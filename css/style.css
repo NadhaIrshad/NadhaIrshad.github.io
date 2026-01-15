@@ -214,6 +214,49 @@ nav a:hover {
   color: #555;
 }
 
+/* -----------------------
+   Hero with Image
+------------------------ */
+.hero-with-image {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-align: left;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #800000;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.hero-text h2 {
+  color: #800000;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.15rem;
+  color: #444;
+}
+
+/* -----------------------
+   Responsive Hero
+------------------------ */
+@media (max-width: 768px) {
+  .hero-with-image {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+}
 
 
 /* -----------------------
