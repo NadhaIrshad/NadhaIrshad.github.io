@@ -1,3 +1,6 @@
+/* -----------------------
+   Reset & Global Styles
+------------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +14,26 @@ body {
   line-height: 1.6;
 }
 
+/* -----------------------
+   Header / Navbar
+------------------------ */
 header {
   border-bottom: 1px solid #e5e7eb;
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 100;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -32,16 +46,21 @@ nav a {
   text-decoration: none;
   color: #1f2933;
   font-weight: 500;
+  transition: color 0.2s;
 }
 
 nav a:hover {
   color: #2563eb;
 }
 
+/* -----------------------
+   Hero / Intro Section
+------------------------ */
 .hero {
   padding: 4rem 2rem;
   max-width: 900px;
   margin: auto;
+  text-align: center;
 }
 
 .hero h2 {
@@ -51,4 +70,75 @@ nav a:hover {
 
 .hero p {
   font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* -----------------------
+   General Section Layout
+------------------------ */
+.section {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+}
+
+.section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.section ul {
+  padding-left: 1.2rem;
+}
+
+.section li {
+  margin-bottom: 0.4rem;
+}
+
+/* -----------------------
+   Experience Page Styles
+------------------------ */
+.experience-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid #2563eb;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.experience-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.experience-item p {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+  padding-left: 1.2rem;
+}
+
+.experience-item li {
+  margin-bottom: 0.3rem;
+}
+
+/* -----------------------
+   Responsive Design
+------------------------ */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .section {
+    padding: 0 1rem;
+  }
 }
