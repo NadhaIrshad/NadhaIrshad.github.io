@@ -5,12 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
 body {
-  background: #ffffff;
-  color: #1f2933;
+  background: #fafafa;
+  color: #333333;
   line-height: 1.6;
 }
 
@@ -18,11 +18,12 @@ body {
    Header / Navbar
 ------------------------ */
 header {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 2px solid #800000; /* maroon */
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  background: #ffffff;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   z-index: 100;
 }
 
@@ -33,44 +34,52 @@ nav {
 }
 
 nav h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  color: #800000;
+  font-weight: 700;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 
 nav a {
   text-decoration: none;
-  color: #1f2933;
+  color: #333;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-  color: #2563eb;
+  color: #800000;
+  transform: scale(1.05);
 }
 
 /* -----------------------
    Hero / Intro Section
 ------------------------ */
 .hero {
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   max-width: 900px;
   margin: auto;
   text-align: center;
+  background: linear-gradient(135deg, #8000001a, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .hero h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
+  color: #800000;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
+  color: #444;
 }
 
 /* -----------------------
@@ -78,8 +87,17 @@ nav a:hover {
 ------------------------ */
 .section {
   max-width: 900px;
-  margin: 2.5rem auto;
-  padding: 0 2rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #800000;
 }
 
 .section h3 {
@@ -92,7 +110,7 @@ nav a:hover {
 }
 
 .section li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 /* -----------------------
@@ -100,15 +118,17 @@ nav a:hover {
 ------------------------ */
 .experience-item {
   margin-bottom: 2rem;
-  padding: 1rem;
-  border-left: 3px solid #2563eb;
-  background: #f9f9f9;
+  padding: 1.2rem 1rem;
+  border-left: 4px solid #800000;
+  background: #fefefe;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
 }
 
 .experience-item h3 {
   font-size: 1.2rem;
   margin-bottom: 0.3rem;
+  color: #800000;
 }
 
 .experience-item p {
@@ -126,6 +146,24 @@ nav a:hover {
 }
 
 /* -----------------------
+   Buttons (if needed later)
+------------------------ */
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #800000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background: #a00000;
+  transform: scale(1.05);
+}
+
+/* -----------------------
    Responsive Design
 ------------------------ */
 @media (max-width: 768px) {
@@ -135,10 +173,10 @@ nav a:hover {
   }
 
   .hero {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .section {
-    padding: 0 1rem;
+    padding: 1.5rem;
   }
 }
