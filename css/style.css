@@ -304,26 +304,3 @@ nav a:hover {
   height: 28px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.nav-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  filter: invert(27%) sepia(100%) saturate(7491%) hue-rotate(356deg) brightness(92%) contrast(85%); /* optional: match your red theme */
-}
