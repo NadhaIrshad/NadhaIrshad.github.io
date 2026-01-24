@@ -296,3 +296,9 @@ nav a:hover {
 .social-links a:hover {
   background-color: #550000; /* darker maroon on hover */
 }
+
+.social-links a.linkedin .icon {
+  width: 24px;   /* new width */
+  height: 24px;  /* new height */
+}
+
