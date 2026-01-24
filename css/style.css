@@ -277,46 +277,60 @@ nav a:hover {
   }
 }
 
-.social-links {
+/* Navigation social icons */
+.nav-social-links {
   display: flex;
-  gap: 20px;           /* space between icons */
-  margin-top: 20px;
+  gap: 10px;
+  align-items: center;
 }
 
-.social-links a {
+.nav-social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;         /* square button */
-  height: 50px;
-  background-color: #800000;  /* maroon shade */
-  border-radius: 8px;
+  width: 35px;
+  height: 35px;
+  background-color: #800000;
+  border-radius: 6px;
   transition: transform 0.2s, background-color 0.2s;
 }
 
-.social-links a:hover {
-  background-color: #a00000;  /* slightly brighter on hover */
+.nav-social-links a:hover {
+  background-color: #a00000;
   transform: translateY(-2px);
 }
 
-.social-links .icon {
-  width: 28px;
-  height: 28px;
+.nav-social-links .icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Makes icons white */
 }
 
-.cv-download {
+/* Download CV button (moved below paragraph) */
+.cv-download-button {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  background-color: #a00000; /* change color as needed */
+  gap: 8px;
+  background-color: #800000;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 12px 24px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
-  margin-left: 5px; /* adjust spacing from name */
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.cv-download:hover {
+.cv-download-button:hover {
   background-color: #a00000;
+  transform: translateY(-2px);
 }
+
+.cv-download-button .icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+/* Remove old styles - delete these from your CSS */
+/* Remove .cv-download and .social-links styles */
