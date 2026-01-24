@@ -279,7 +279,7 @@ nav a:hover {
 
 .social-links {
   display: flex;
-  gap: 50px;           /* space between icons */
+  gap: 20px;           /* space between icons */
   margin-top: 20px;
 }
 
@@ -304,3 +304,19 @@ nav a:hover {
   height: 28px;
 }
 
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #a00000; /* change color as needed */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px; /* adjust spacing from name */
+}
+
+.cv-download:hover {
+  background-color: #a00000;
+}
