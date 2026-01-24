@@ -336,3 +336,41 @@ nav a:hover {
   filter: brightness(0) invert(1);
 }
 
+/* Contact List with Icons */
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: #fafafa;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.contact-list li:hover {
+  background: #f0f0f0;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px; /* Prevents icon from shrinking */
+  filter: invert(11%) sepia(31%) saturate(6943%) hue-rotate(349deg) brightness(93%) contrast(118%); /* Makes icon maroon */
+}
+
+.contact-list a {
+  color: #800000;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-list a:hover {
+  color: #a00000;
+  text-decoration: underline;
+}
