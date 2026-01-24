@@ -277,3 +277,61 @@ nav a:hover {
   }
 }
 
+/* Navigation social icons */
+.nav-social-links {
+  display: flex;
+  gap: 15px;  /* Increased gap between icons */
+  align-items: center;
+}
+
+.nav-social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #800000;
+  border-radius: 6px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.nav-social-links a:hover {
+  background-color: #a00000;
+  transform: translateY(-2px);
+}
+
+.nav-social-links .icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Makes icons white */
+}
+
+/* Download CV button (moved below paragraph) */
+.cv-download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #800000;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 30px;  /* More space above the button */
+  border: 2px solid #800000;  /* Box border */
+  box-shadow: 0 4px 10px rgba(128, 0, 0, 0.2);  /* Shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.cv-download-button:hover {
+  background-color: #a00000;
+  border-color: #a00000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(128, 0, 0, 0.3);
+}
+
+.cv-download-button .icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
