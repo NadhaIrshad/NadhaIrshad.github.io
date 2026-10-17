@@ -325,6 +325,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.015
 .timeline .body > p { color: var(--muted); }
 
 .sub-projects { display: grid; gap: 0.9rem; margin-top: 1rem; }
+.timeline .gallery { margin-top: 1.25rem; grid-auto-rows: 220px; }
+.timeline .gallery figure, .timeline .gallery figure.wide { aspect-ratio: auto; }
+@media (max-width: 560px) { .timeline .gallery { grid-auto-rows: 130px; } }
 .sub-projects .card { padding: 1.2rem 1.3rem; }
 .sub-projects h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
 
