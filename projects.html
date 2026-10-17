@@ -2,120 +2,214 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nadha Irshad | Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Nadha Irshad</title>
+  <meta name="description" content="Projects by Nadha Irshad in machine learning, computer vision, bio-signal processing and embedded systems." />
+  <meta property="og:title" content="Projects | Nadha Irshad" />
+  <meta property="og:description" content="Projects by Nadha Irshad in machine learning, computer vision, bio-signal processing and embedded systems." />
+  <meta property="og:image" content="assets/img/profile.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237d1d2c'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='17' font-weight='bold' fill='white' text-anchor='middle'%3ENI%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 
-  <header>
-    <nav>
-      <h1>Nadha Irshad</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <!-- Replace Contact with social icons -->
-        <li class="nav-social-links">
-          <a href="https://github.com/nadhairshad" target="_blank" class="github">
-            <img src="icons/github.svg" alt="GitHub" class="icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/nadha-irshad-6aa525294" target="_blank" class="linkedin">
-            <img src="icons/linkedin.svg" alt="LinkedIn" class="icon" />
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Nadha <span>Irshad</span></a>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="experience.html">Research</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="awards.html">Awards</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a class="icon-btn" href="https://github.com/NadhaIrshad" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/nadha-irshad-6aa525294" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
+          <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-<main class="section">
+  <main>
+    <div class="container">
 
-  <h2>Projects</h2>
+      <header class="page-head">
+        <span class="eyebrow">Projects</span>
+        <h1>Things I&rsquo;ve built</h1>
+        <p>These range from deep learning research to embedded hardware: sign language datasets, wearable motion sensing, vision-guided robots and a non-invasive glucometer.</p>
+      </header>
 
-  <!-- Bin Picking Robot -->
-  <div class="project-card">
-    <h3>Bin Picking Robot – Vision System</h3>
-    <p>
-      Developed an instance-segmentation based vision pipeline to detect and isolate
-      randomly scattered non-linear objects for robotic manipulation.
-      Benchmarked DeepLabV3, Mask R-CNN, and YOLO-seg for real-time performance
-      and deployed the final model on NVIDIA Jetson Nano.
-    </p>
-    <p><strong>Skills:</strong> Computer Vision, Deep Learning, Jetson Nano</p>
-    <a href="https://github.com/NadhaIrshad/Bin-Picking-Robot-Vision" target="_blank">GitHub Repository</a>
-  </div>
+      <article class="project">
+        <div class="project-media art"><span>Auslan<br />Dataset</span></div>
+        <div class="project-body">
+          <span class="when">Dec 2025 &ndash; Jun 2026 &middot; The University of Sydney</span>
+          <h3>Australian Sign Language (Auslan) Dataset &amp; Recognition</h3>
+          <span class="badge">Paper under review</span>
+          <ul class="bullets">
+            <li>Led end-to-end development of an Auslan dataset to help hearing parents communicate with their deaf children, including data collection, external coordination and logistics.</li>
+            <li>Developed and benchmarked multiple deep learning architectures for sign recognition on the collected data.</li>
+            <li>Analysed model performance and dataset characteristics; co-authored a conference paper.</li>
+          </ul>
+          <ul class="tags"><li>HCI</li><li>Dataset design</li><li>Deep learning</li><li>Accessibility</li></ul>
+        </div>
+      </article>
 
-  <!-- GlucoPal -->
-  <div class="project-card">
-    <h3>GlucoPal – Non-Invasive Glucose Monitor</h3>
-    <p>
-      Designed a portable device using NIR spectroscopy and PPG signals to estimate
-      blood glucose levels without finger-prick tests. Built signal acquisition and
-      processing pipeline using Raspberry Pi.
-    </p>
-    <p><strong>Skills:</strong> Biosignal Processing, Raspberry Pi, Embedded Systems</p>
-    <a href="https://github.com/NadhaIrshad/GlucoPal" target="_blank">GitHub Repository</a>
-  </div>
+      <article class="project">
+        <div class="project-media art"><span>Motion<br />MAE</span></div>
+        <div class="project-body">
+          <span class="when">Mar &ndash; Jun 2026 &middot; The University of Sydney</span>
+          <h3>MotionMAE: Human Motion Prediction</h3>
+          <ul class="bullets">
+            <li>Evaluated existing human motion prediction models using IMU data from sensors at different body locations.</li>
+            <li>Ran sensitivity and noise analyses on how sensor placement and measurement noise affect prediction.</li>
+            <li>Ran ablation studies on the framework&rsquo;s components and configurations.</li>
+          </ul>
+          <ul class="tags"><li>IMU sensing</li><li>Signal processing</li><li>Time-series ML</li></ul>
+        </div>
+      </article>
 
-  <!-- CVPR challenges-->
-  <div class="project-card">
-    <h3>Fine Grained Biodiversity Recognition @ FGVC12-CVPR-2025 challenges</h3>
-    <p>
-      Participated in the PlantCLEF 2025 and FungiCLEF challenges under LifeCLEF, internationally recognized benchmarks for fine-grained visual categorization (FGVC) in biodiversity monitoring.
-      These challenges simulate real ecological survey conditions where models must recognize species from noisy, uncontrolled field images and limited data, closely aligning with research themes from the CVPR FGVC workshops.
-    </p>
-    <p><strong>Skills:</strong> Few shot Learning, Multi Label classification, Computer Vision</p>
-    <a href="https://github.com/NadhaIrshad/FGVC12-CVPR-2025.git" target="_blank">GitHub Repository</a><br/>
-    <a href="https://github.com/NadhaIrshad/In22-S5-EN3160-Project---PlantCLEF2025.git" target="_blank">PlantCLEF challenge</a>
-  </div>
+      <article class="project">
+        <div class="project-media"><img src="assets/img/bin-picking.jpg" alt="Bin picking robot control unit showing live instance segmentation of pipe fittings" loading="lazy" /></div>
+        <div class="project-body">
+          <span class="when">Jan &ndash; Jul 2025</span>
+          <h3>Bin Picking Robot: Vision System</h3>
+          <ul class="bullets">
+            <li>Designed and built the vision system for a Cartesian robot with a suction gripper that picks randomly scattered objects from bins.</li>
+            <li>Benchmarked DeepLabV3, Mask R-CNN and YOLO-seg for instance segmentation, then deployed <strong>YOLOv11</strong> on edge hardware for its accuracy and speed.</li>
+            <li>Optimised camera placement and calibrated vision output to the robot&rsquo;s coordinate frame for precise localisation.</li>
+          </ul>
+          <ul class="tags"><li>Computer vision</li><li>Instance segmentation</li><li>Edge deployment</li><li>Robotics</li></ul>
+          <p class="links"><a href="https://github.com/NadhaIrshad/Bin-Picking-Robot-Vision" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </article>
 
-  <!-- EcoSync -->
-  <div class="project-card">
-    <h3>EcoSync – Intelligent AC Regulation for Hotels</h3>
-    <p>
-      IoT-based smart AC controller that reduces energy waste using keycard-linked
-      occupancy detection and IR-based AC control.
-    </p>
-    <p><strong>Awards:</strong> IESL TechnoSpark 2024, INSEE Circularity Challenge 2025</p>
-    <p><strong>Skills:</strong> IoT, PCB Design, Microcontrollers</p>
-  </div>
+      <article class="project">
+        <div class="project-media duo">
+          <img src="assets/img/glucopal-device.jpg" alt="GlucoPal prototype displaying a glucose reading of 108.74 mg/dL" loading="lazy" />
+          <img src="assets/img/glucopal-testing.jpg" alt="GlucoPal sensor circuit under test with a Raspberry Pi" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="when">Mar &ndash; Jul 2025</span>
+          <h3>GlucoPal: Non-Invasive Glucometer</h3>
+          <span class="badge">Finalist, BRAINSTORM 2025</span>
+          <ul class="bullets">
+            <li>A portable glucose monitor that uses near-infrared (NIR) sensing and photoplethysmography (PPG) instead of finger-prick tests.</li>
+            <li>Captured raw PPG signals and built the processing pipeline (filtering, normalisation, feature extraction) on a Raspberry Pi.</li>
+            <li>Designed and trained a <strong>ResNet34</strong>-based model in PyTorch to predict blood glucose from processed PPG waveforms.</li>
+          </ul>
+          <ul class="tags"><li>Bio-signal processing</li><li>PyTorch</li><li>Raspberry Pi</li><li>Healthcare</li></ul>
+          <p class="links"><a href="https://github.com/NadhaIrshad/GlucoPal" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </article>
 
-  <!-- Robot Primus -->
-  <div class="project-card">
-    <h3>Robot Primus – Autonomous Multi-Task Robot</h3>
-    <p>
-      Built an autonomous robot with ESP32 + Arduino Nano coordination for line following,
-      maze solving, and object manipulation using UART communication and sensor fusion.
-    </p>
-    <p><strong>Skills:</strong> Embedded Systems, Robot Programming</p>
-  </div>
+      <article class="project">
+        <div class="project-media art"><span>FGVC12<br />@ CVPR&nbsp;2025</span></div>
+        <div class="project-body">
+          <span class="when">2025</span>
+          <h3>Fine-Grained Biodiversity Recognition: FGVC12 @ CVPR 2025</h3>
+          <ul class="bullets">
+            <li>Competed in the LifeCLEF challenges of the CVPR 2025 FGVC12 workshop: <strong>PlantCLEF</strong>, <strong>FungiCLEF</strong> and <strong>AnimalCLEF</strong>.</li>
+            <li>Applied deep learning to species identification, multi-label plant recognition from quadrat images and animal re-identification, all on noisy field images with limited data.</li>
+          </ul>
+          <ul class="tags"><li>Fine-grained classification</li><li>Few-shot learning</li><li>Multi-label</li></ul>
+          <p class="links">
+            <a href="https://github.com/NadhaIrshad/FGVC12-CVPR-2025" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/NadhaIrshad/In22-S5-EN3160-Project---PlantCLEF2025" target="_blank" rel="noopener">PlantCLEF code</a>
+          </p>
+        </div>
+      </article>
 
-  <!-- Solar Tracker -->
-  <div class="project-card">
-    <h3>Automatic Analog Solar Tracker</h3>
-    <p>
-      Designed an analog PID-based solar tracking system using op-amps, LDR sensing,
-      PWM motor control, and a custom two-layer PCB for efficient PV alignment.
-    </p>
-    <p><strong>Skills:</strong> Analog Circuit Design, PCB Design</p>
-    <a href="https://github.com/Muftee-Mysan/Automatic-Solar-Tracker-Analog-electronics-project" target="_blank">GitHub</a><br/>
-    <a href="https://www.youtube.com/watch?v=h18GQ49P45U" target="_blank">Watch our prototype in action on YouTube</a><br/>
-    <a href="https://medium.com/@mufteemysan/automatic-solar-tracker-5b95b9e3a2e6" target="_blank">Dive into the full story on Medium</a>
-  </div>
+      <article class="project">
+        <div class="project-media duo">
+          <img src="assets/img/technospark-team.jpg" alt="EcoSync team at Techno 2024 Startup Spark" loading="lazy" />
+          <img src="assets/img/circularity-team.jpg" alt="EcoSync team at the INSEE Circularity Challenge 2025" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="when">2024 &ndash; 2025</span>
+          <h3>EcoSync: Intelligent AC Regulation for Hotels</h3>
+          <span class="badge">1st Runner-up &times; 2</span>
+          <ul class="bullets">
+            <li>An IoT smart AC controller that cuts energy waste in hotel rooms. It links occupancy detection to the room keycard and controls the AC over IR.</li>
+            <li>1st Runner-up at <strong>IESL Techno Startup Spark 2024</strong> and the <strong>GapHQ &times; INSEE Circularity Challenge 2025</strong>.</li>
+          </ul>
+          <ul class="tags"><li>IoT</li><li>PCB design</li><li>Microcontrollers</li><li>Sustainability</li></ul>
+        </div>
+      </article>
 
-  <!-- RightVote -->
-  <div class="project-card">
-    <h3>RightVote – AI Powered Election Web App</h3>
-    <p>
-      Developed an AI web app featuring an LSTM-based win predictor, RoBERTa sentiment
-      analysis, LLM chatbot, and manifesto comparator for voter awareness (IEEE AI Challenge).
-    </p>
-    <p><strong>Skills:</strong> Machine Learning, LSTM, NLP, LLMs</p>
-    <a href="https://github.com/NaveenSanjaya/098_LLMinators" target="_blank">GitHub</a><br/>
-    <a href="https://right-vote.web.app/" target="_blank">Website</a>
-  </div>
+      <article class="project">
+        <div class="project-media duo">
+          <img src="assets/img/ai-challenge-team.jpg" alt="Team LLMinators at the Sri Lanka AI Challenge" loading="lazy" />
+          <img src="assets/img/ai-challenge-finalists.jpg" alt="Sri Lanka AI Challenge 2024 finalists announcement" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="when">2024</span>
+          <h3>RightVote: AI-Powered Election Web App</h3>
+          <span class="badge">Finalist, Sri Lanka AI Challenge 2024</span>
+          <ul class="bullets">
+            <li>A voter-awareness web app built with team LLMinators for the IEEE Challenge Sphere AI Challenge.</li>
+            <li>Features an LSTM-based win predictor, RoBERTa sentiment analysis, an LLM chatbot and a manifesto comparator.</li>
+          </ul>
+          <ul class="tags"><li>NLP</li><li>LSTM</li><li>LLMs</li><li>Web</li></ul>
+          <p class="links">
+            <a href="https://right-vote.web.app/" target="_blank" rel="noopener">Live site</a>
+            <a href="https://github.com/NaveenSanjaya/098_LLMinators" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </article>
 
-</main>
+      <section class="section" style="margin-top:2.5rem">
+        <h2 class="section-title">More hardware projects</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Automatic Analog Solar Tracker</h3>
+            <p>An analog PID solar tracker built from op-amps, LDR sensing and PWM motor control, on a custom two-layer PCB.</p>
+            <ul class="tags"><li>Analog design</li><li>PCB design</li></ul>
+            <p class="links">
+              <a href="https://github.com/Muftee-Mysan/Automatic-Solar-Tracker-Analog-electronics-project" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.youtube.com/watch?v=h18GQ49P45U" target="_blank" rel="noopener">Video</a>
+              <a href="https://medium.com/@mufteemysan/automatic-solar-tracker-5b95b9e3a2e6" target="_blank" rel="noopener">Write-up</a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Robot Primus: Autonomous Multi-Task Robot</h3>
+            <p>An autonomous robot that coordinates an ESP32 and an Arduino Nano over UART, with sensor fusion for line following, maze solving and object manipulation.</p>
+            <ul class="tags"><li>Embedded systems</li><li>Robotics</li></ul>
+          </article>
+        </div>
+      </section>
 
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Let&rsquo;s talk.</h2>
+          <p>I&rsquo;m open to research collaborations, graduate study opportunities and conversations about human-centred computing, machine learning and healthcare technology.</p>
+        </div>
+        <ul class="contact-links">
+          <li><a href="mailto:nadhairshad001@gmail.com"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg> nadhairshad001@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/nadha-irshad-6aa525294" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg> linkedin.com/in/nadha-irshad</a></li>
+          <li><a href="https://github.com/NadhaIrshad" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg> github.com/NadhaIrshad</a></li>
+          <li><a href="files/CV.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 12v6M9 15l3 3 3-3"/></svg> Curriculum Vitae (PDF)</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Nadha Irshad</span>
+        <span>Moratuwa, Sri Lanka</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
