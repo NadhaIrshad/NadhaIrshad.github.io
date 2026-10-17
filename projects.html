@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=4" />
   <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -46,6 +46,29 @@
         <h1>Things I&rsquo;ve built</h1>
         <p>These range from deep learning research to embedded hardware: sign language datasets, wearable motion sensing, vision-guided robots and a non-invasive glucometer.</p>
       </header>
+
+      <section class="current">
+        <h2 class="section-title">Current research</h2>
+        <div class="grid-2">
+          <article class="card">
+            <span class="badge">Ongoing</span>
+            <span class="when">2026 &ndash; present</span>
+            <h3>Hardware Platform for Real-Time Gut Activity Monitoring</h3>
+            <p class="meta">Final-year project, University of Moratuwa &middot; Supervisor: Dr. Pranjeewan &middot; Team of 4</p>
+            <p>Expanding OpenGut (UIST 2026): building the next version of the hardware, with on-device noise cancellation and classification of gut sounds for real-time monitoring.</p>
+            <ul class="tags"><li>Embedded hardware</li><li>Acoustic sensing</li><li>On-device ML</li><li>Healthcare</li></ul>
+          </article>
+          <article class="card">
+            <span class="badge">Early stage</span>
+            <span class="when">2026 &ndash; present</span>
+            <h3>PPG Heart-Rate Estimation on Microcontrollers</h3>
+            <p>Extending the TROIKA heart-rate estimation method and comparing variants that can run on Nordic microcontrollers.</p>
+            <ul class="tags"><li>PPG</li><li>Bio-signal processing</li><li>Embedded systems</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <h2 class="section-title" style="margin-top:3rem">Past projects</h2>
 
       <article class="project">
         <div class="project-media art"><span>Auslan<br />Dataset</span></div>
@@ -207,6 +230,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=3"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

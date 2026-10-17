@@ -371,6 +371,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.015
 
 .project.no-media { grid-template-columns: 1fr; }
 
+.current .card { display: flex; flex-direction: column; }
+.current .card .badge { margin-bottom: 0.75rem; }
+.current .card .when { font-size: 0.85rem; color: var(--accent); font-weight: 600; }
+.current .card h3 { font-size: 1.3rem; margin: 0.3rem 0 0.4rem; }
+.current .card .meta { margin-bottom: 0.75rem; }
+.current .card .tags { margin-top: auto; padding-top: 1.25rem; }
+
 /* app screenshots: show the whole image instead of cropping */
 .project-media.shot { display: flex; align-items: center; padding: 1.25rem; }
 .project-media.shot img { position: static; height: auto; object-fit: contain; border-radius: 8px; box-shadow: var(--shadow); }
