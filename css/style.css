@@ -377,6 +377,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.015
 .current .card h3 { font-size: 1.3rem; margin: 0.3rem 0 0.4rem; }
 .current .card .meta { margin-bottom: 0.75rem; }
 .current .card .tags { margin-top: auto; padding-top: 1.25rem; }
+@media (max-width: 860px) { .current .grid-3 { grid-template-columns: 1fr; } }
 
 /* app screenshots: show the whole image instead of cropping */
 .project-media.shot { display: flex; align-items: center; padding: 1.25rem; }
