@@ -371,6 +371,10 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.015
 
 .project.no-media { grid-template-columns: 1fr; }
 
+/* app screenshots: show the whole image instead of cropping */
+.project-media.shot { display: flex; align-items: center; padding: 1.25rem; }
+.project-media.shot img { position: static; height: auto; object-fit: contain; border-radius: 8px; box-shadow: var(--shadow); }
+
 /* placeholder art for projects without photos */
 .project-media.art {
   display: flex;
